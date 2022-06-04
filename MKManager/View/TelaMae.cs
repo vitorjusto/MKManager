@@ -4,13 +4,7 @@ namespace MKManager.View
 {
     public partial class TelaMae : Form
     {
-        Guna.UI2.WinForms.Guna2GradientButton _ultimoBtn = new Guna2GradientButton();
-
-        public TelaMae() 
-        { 
-            InitializeComponent();
-            _ultimoBtn = btnPaginaInicial;
-        }
+        public TelaMae() => InitializeComponent();
 
         private void btnCadastrarClientes_Click(object sender, EventArgs e)
         {
@@ -60,6 +54,5 @@ namespace MKManager.View
             btnRelatorioClientes.Checked = false;
             btnRelatorioProdutos.Checked = false;
         }
-
     }
 }
