@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnRelatorioProdutos = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.btnRelatorioClientes = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnExibirProdutos = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnExibirClientes = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnCadastrarProdutos = new Guna.UI2.WinForms.Guna2GradientButton();
@@ -44,6 +46,8 @@
             // guna2Panel1
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(153)))), ((int)(((byte)(183)))));
+            this.guna2Panel1.Controls.Add(this.btnRelatorioProdutos);
+            this.guna2Panel1.Controls.Add(this.btnRelatorioClientes);
             this.guna2Panel1.Controls.Add(this.btnExibirProdutos);
             this.guna2Panel1.Controls.Add(this.btnExibirClientes);
             this.guna2Panel1.Controls.Add(this.btnCadastrarProdutos);
@@ -55,6 +59,48 @@
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(160, 561);
             this.guna2Panel1.TabIndex = 0;
+            // 
+            // btnRelatorioProdutos
+            // 
+            this.btnRelatorioProdutos.CheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.btnRelatorioProdutos.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnRelatorioProdutos.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnRelatorioProdutos.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnRelatorioProdutos.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnRelatorioProdutos.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnRelatorioProdutos.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnRelatorioProdutos.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(197)))), ((int)(((byte)(213)))));
+            this.btnRelatorioProdutos.FocusedColor = System.Drawing.Color.Transparent;
+            this.btnRelatorioProdutos.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnRelatorioProdutos.ForeColor = System.Drawing.Color.White;
+            this.btnRelatorioProdutos.Location = new System.Drawing.Point(0, 407);
+            this.btnRelatorioProdutos.Name = "btnRelatorioProdutos";
+            this.btnRelatorioProdutos.PressedColor = System.Drawing.Color.Transparent;
+            this.btnRelatorioProdutos.Size = new System.Drawing.Size(160, 55);
+            this.btnRelatorioProdutos.TabIndex = 8;
+            this.btnRelatorioProdutos.Text = "Relatório Produtos";
+            this.btnRelatorioProdutos.Click += new System.EventHandler(this.btnRelatorioProdutos_Click);
+            // 
+            // btnRelatorioClientes
+            // 
+            this.btnRelatorioClientes.CheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.btnRelatorioClientes.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnRelatorioClientes.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnRelatorioClientes.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnRelatorioClientes.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnRelatorioClientes.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnRelatorioClientes.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnRelatorioClientes.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(197)))), ((int)(((byte)(213)))));
+            this.btnRelatorioClientes.FocusedColor = System.Drawing.Color.Transparent;
+            this.btnRelatorioClientes.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnRelatorioClientes.ForeColor = System.Drawing.Color.White;
+            this.btnRelatorioClientes.Location = new System.Drawing.Point(0, 352);
+            this.btnRelatorioClientes.Name = "btnRelatorioClientes";
+            this.btnRelatorioClientes.PressedColor = System.Drawing.Color.Transparent;
+            this.btnRelatorioClientes.Size = new System.Drawing.Size(160, 55);
+            this.btnRelatorioClientes.TabIndex = 7;
+            this.btnRelatorioClientes.Text = "Relatório Clientes";
+            this.btnRelatorioClientes.Click += new System.EventHandler(this.btnRelatorioClientes_Click);
             // 
             // btnExibirProdutos
             // 
@@ -190,7 +236,7 @@
             this.panelForms.Size = new System.Drawing.Size(624, 561);
             this.panelForms.TabIndex = 1;
             // 
-            // TelaInicial
+            // TelaMae
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -200,7 +246,7 @@
             this.Controls.Add(this.guna2Panel1);
             this.ForeColor = System.Drawing.Color.White;
             this.MaximizeBox = false;
-            this.Name = "TelaInicial";
+            this.Name = "TelaMae";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TelaInicial";
             this.guna2Panel1.ResumeLayout(false);
@@ -221,5 +267,7 @@
         private Guna.UI2.WinForms.Guna2GradientButton btnExibirProdutos;
         private Guna.UI2.WinForms.Guna2GradientButton btnExibirClientes;
         private Guna.UI2.WinForms.Guna2Panel panelForms;
+        private Guna.UI2.WinForms.Guna2GradientButton btnRelatorioProdutos;
+        private Guna.UI2.WinForms.Guna2GradientButton btnRelatorioClientes;
     }
 }

@@ -38,6 +38,17 @@ namespace MKManager.View
             LimparBotoesAtivos();
             btnExibirProdutos.Checked = true;
         }
+        private void btnRelatorioClientes_Click(object sender, EventArgs e)
+        {
+            LimparBotoesAtivos();
+            btnRelatorioClientes.Checked = true;
+        }
+
+        private void btnRelatorioProdutos_Click(object sender, EventArgs e)
+        {
+            LimparBotoesAtivos();
+            btnRelatorioProdutos.Checked = true;
+        }
 
         private void LimparBotoesAtivos()
         {
@@ -46,6 +57,9 @@ namespace MKManager.View
             btnCadastrarProdutos.Checked = false;
             btnExibirClientes.Checked = false;
             btnExibirProdutos.Checked = false;
+            btnRelatorioClientes.Checked = false;
+            btnRelatorioProdutos.Checked = false;
         }
+
     }
 }

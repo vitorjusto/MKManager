@@ -40,11 +40,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Meu Micro\\source\\repos\\MKManager\\MKManager\\MKManager.csproj",
+      "projectUniqueName": "C:\\Users\\Meu Micro\\Source\\Repos\\MK-Manager\\MKManager\\MKManager.csproj",
       "projectName": "MKManager",
-      "projectPath": "C:\\Users\\Meu Micro\\source\\repos\\MKManager\\MKManager\\MKManager.csproj",
+      "projectPath": "C:\\Users\\Meu Micro\\Source\\Repos\\MK-Manager\\MKManager\\MKManager.csproj",
       "packagesPath": "C:\\Users\\Meu Micro\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Meu Micro\\source\\repos\\MKManager\\MKManager\\obj\\",
+      "outputPath": "C:\\Users\\Meu Micro\\Source\\Repos\\MK-Manager\\MKManager\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Meu Micro\\AppData\\Roaming\\NuGet\\NuGet.Config",
