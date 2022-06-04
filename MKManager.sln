@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32526.322
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MKManager", "MKManager\MKManager.csproj", "{9EA2722B-A2AE-45FB-A7A9-DD24364F8A48}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9EA2722B-A2AE-45FB-A7A9-DD24364F8A48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EA2722B-A2AE-45FB-A7A9-DD24364F8A48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EA2722B-A2AE-45FB-A7A9-DD24364F8A48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EA2722B-A2AE-45FB-A7A9-DD24364F8A48}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BD589D08-E279-489F-BA9D-A2FD8EC439B0}
+	EndGlobalSection
+EndGlobal
