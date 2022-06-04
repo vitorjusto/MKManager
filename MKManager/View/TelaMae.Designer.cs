@@ -72,11 +72,11 @@
             this.btnRelatorioProdutos.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(197)))), ((int)(((byte)(213)))));
             this.btnRelatorioProdutos.FocusedColor = System.Drawing.Color.Transparent;
             this.btnRelatorioProdutos.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnRelatorioProdutos.ForeColor = System.Drawing.Color.White;
-            this.btnRelatorioProdutos.Location = new System.Drawing.Point(0, 407);
+            this.btnRelatorioProdutos.ForeColor = System.Drawing.Color.Black;
+            this.btnRelatorioProdutos.Location = new System.Drawing.Point(0, 492);
             this.btnRelatorioProdutos.Name = "btnRelatorioProdutos";
             this.btnRelatorioProdutos.PressedColor = System.Drawing.Color.Transparent;
-            this.btnRelatorioProdutos.Size = new System.Drawing.Size(160, 55);
+            this.btnRelatorioProdutos.Size = new System.Drawing.Size(160, 68);
             this.btnRelatorioProdutos.TabIndex = 8;
             this.btnRelatorioProdutos.Text = "Relatório Produtos";
             this.btnRelatorioProdutos.Click += new System.EventHandler(this.btnRelatorioProdutos_Click);
@@ -93,11 +93,11 @@
             this.btnRelatorioClientes.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(197)))), ((int)(((byte)(213)))));
             this.btnRelatorioClientes.FocusedColor = System.Drawing.Color.Transparent;
             this.btnRelatorioClientes.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnRelatorioClientes.ForeColor = System.Drawing.Color.White;
-            this.btnRelatorioClientes.Location = new System.Drawing.Point(0, 352);
+            this.btnRelatorioClientes.ForeColor = System.Drawing.Color.Black;
+            this.btnRelatorioClientes.Location = new System.Drawing.Point(0, 424);
             this.btnRelatorioClientes.Name = "btnRelatorioClientes";
             this.btnRelatorioClientes.PressedColor = System.Drawing.Color.Transparent;
-            this.btnRelatorioClientes.Size = new System.Drawing.Size(160, 55);
+            this.btnRelatorioClientes.Size = new System.Drawing.Size(160, 68);
             this.btnRelatorioClientes.TabIndex = 7;
             this.btnRelatorioClientes.Text = "Relatório Clientes";
             this.btnRelatorioClientes.Click += new System.EventHandler(this.btnRelatorioClientes_Click);
@@ -114,11 +114,11 @@
             this.btnExibirProdutos.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(197)))), ((int)(((byte)(213)))));
             this.btnExibirProdutos.FocusedColor = System.Drawing.Color.Transparent;
             this.btnExibirProdutos.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnExibirProdutos.ForeColor = System.Drawing.Color.White;
-            this.btnExibirProdutos.Location = new System.Drawing.Point(0, 297);
+            this.btnExibirProdutos.ForeColor = System.Drawing.Color.Black;
+            this.btnExibirProdutos.Location = new System.Drawing.Point(0, 356);
             this.btnExibirProdutos.Name = "btnExibirProdutos";
             this.btnExibirProdutos.PressedColor = System.Drawing.Color.Transparent;
-            this.btnExibirProdutos.Size = new System.Drawing.Size(160, 55);
+            this.btnExibirProdutos.Size = new System.Drawing.Size(160, 68);
             this.btnExibirProdutos.TabIndex = 6;
             this.btnExibirProdutos.Text = "Exibir Produtos";
             this.btnExibirProdutos.Click += new System.EventHandler(this.btnExibirProdutos_Click);
@@ -135,11 +135,11 @@
             this.btnExibirClientes.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(197)))), ((int)(((byte)(213)))));
             this.btnExibirClientes.FocusedColor = System.Drawing.Color.Transparent;
             this.btnExibirClientes.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnExibirClientes.ForeColor = System.Drawing.Color.White;
-            this.btnExibirClientes.Location = new System.Drawing.Point(0, 242);
+            this.btnExibirClientes.ForeColor = System.Drawing.Color.Black;
+            this.btnExibirClientes.Location = new System.Drawing.Point(0, 288);
             this.btnExibirClientes.Name = "btnExibirClientes";
             this.btnExibirClientes.PressedColor = System.Drawing.Color.Transparent;
-            this.btnExibirClientes.Size = new System.Drawing.Size(160, 55);
+            this.btnExibirClientes.Size = new System.Drawing.Size(160, 68);
             this.btnExibirClientes.TabIndex = 5;
             this.btnExibirClientes.Text = "Exibir Clientes";
             this.btnExibirClientes.Click += new System.EventHandler(this.btnExibirClientes_Click);
@@ -156,11 +156,11 @@
             this.btnCadastrarProdutos.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(197)))), ((int)(((byte)(213)))));
             this.btnCadastrarProdutos.FocusedColor = System.Drawing.Color.Transparent;
             this.btnCadastrarProdutos.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnCadastrarProdutos.ForeColor = System.Drawing.Color.White;
-            this.btnCadastrarProdutos.Location = new System.Drawing.Point(0, 187);
+            this.btnCadastrarProdutos.ForeColor = System.Drawing.Color.Black;
+            this.btnCadastrarProdutos.Location = new System.Drawing.Point(0, 220);
             this.btnCadastrarProdutos.Name = "btnCadastrarProdutos";
             this.btnCadastrarProdutos.PressedColor = System.Drawing.Color.Transparent;
-            this.btnCadastrarProdutos.Size = new System.Drawing.Size(160, 55);
+            this.btnCadastrarProdutos.Size = new System.Drawing.Size(160, 68);
             this.btnCadastrarProdutos.TabIndex = 4;
             this.btnCadastrarProdutos.Text = "Cadastrar Produtos";
             this.btnCadastrarProdutos.Click += new System.EventHandler(this.btnCadastrarProdutos_Click);
@@ -177,11 +177,11 @@
             this.btnCadastrarClientes.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(197)))), ((int)(((byte)(213)))));
             this.btnCadastrarClientes.FocusedColor = System.Drawing.Color.Transparent;
             this.btnCadastrarClientes.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnCadastrarClientes.ForeColor = System.Drawing.Color.White;
-            this.btnCadastrarClientes.Location = new System.Drawing.Point(0, 132);
+            this.btnCadastrarClientes.ForeColor = System.Drawing.Color.Black;
+            this.btnCadastrarClientes.Location = new System.Drawing.Point(0, 152);
             this.btnCadastrarClientes.Name = "btnCadastrarClientes";
             this.btnCadastrarClientes.PressedColor = System.Drawing.Color.Transparent;
-            this.btnCadastrarClientes.Size = new System.Drawing.Size(160, 55);
+            this.btnCadastrarClientes.Size = new System.Drawing.Size(160, 68);
             this.btnCadastrarClientes.TabIndex = 3;
             this.btnCadastrarClientes.Text = "Cadastrar Clientes";
             this.btnCadastrarClientes.Click += new System.EventHandler(this.btnCadastrarClientes_Click);
@@ -199,11 +199,11 @@
             this.btnPaginaInicial.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(197)))), ((int)(((byte)(213)))));
             this.btnPaginaInicial.FocusedColor = System.Drawing.Color.Transparent;
             this.btnPaginaInicial.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnPaginaInicial.ForeColor = System.Drawing.Color.White;
-            this.btnPaginaInicial.Location = new System.Drawing.Point(0, 77);
+            this.btnPaginaInicial.ForeColor = System.Drawing.Color.Black;
+            this.btnPaginaInicial.Location = new System.Drawing.Point(0, 84);
             this.btnPaginaInicial.Name = "btnPaginaInicial";
             this.btnPaginaInicial.PressedColor = System.Drawing.Color.Transparent;
-            this.btnPaginaInicial.Size = new System.Drawing.Size(160, 55);
+            this.btnPaginaInicial.Size = new System.Drawing.Size(160, 68);
             this.btnPaginaInicial.TabIndex = 2;
             this.btnPaginaInicial.Text = "Página Inicial";
             this.btnPaginaInicial.Click += new System.EventHandler(this.btnPaginaInicial_Click);
@@ -214,18 +214,19 @@
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel2.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(160, 77);
+            this.guna2Panel2.Size = new System.Drawing.Size(160, 84);
             this.guna2Panel2.TabIndex = 1;
             // 
             // lblMKManager
             // 
             this.lblMKManager.BackColor = System.Drawing.Color.Transparent;
-            this.lblMKManager.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblMKManager.Location = new System.Drawing.Point(3, 12);
+            this.lblMKManager.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblMKManager.ForeColor = System.Drawing.Color.Black;
+            this.lblMKManager.Location = new System.Drawing.Point(17, 23);
             this.lblMKManager.Name = "lblMKManager";
-            this.lblMKManager.Size = new System.Drawing.Size(150, 52);
+            this.lblMKManager.Size = new System.Drawing.Size(126, 32);
             this.lblMKManager.TabIndex = 0;
-            this.lblMKManager.Text = "Minha Assistente <br>\r\nMary Kay";
+            this.lblMKManager.Text = "MK Manager";
             this.lblMKManager.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panelForms
