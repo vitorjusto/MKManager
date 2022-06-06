@@ -2,13 +2,25 @@
 {
     internal class Limpar
     {
-        public static void GroupBox(Control controle) 
+        public static void TodosOsCampos(Control controles) 
         {
-            foreach (Control controlesFilhos in controle.Controls)
+            foreach (var item in controles.Controls)
             {
-                controlesFilhos.ResetText();
-                GroupBox(controlesFilhos);
+                CampoEspecifico((Control)item);
             }
+        }
+
+        public static void CampoEspecifico(Control controle)
+        {
+
+            if (controle is TextBox || controle is ComboBox)
+                controle.Text = string.Empty;
+
+            if (controle is RadioButton radioButton)
+                radioButton.Checked = false;
+
+            if(controle is CheckBox checkBox)
+                checkBox.Checked = false;
         }
     }
 }
