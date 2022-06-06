@@ -1,6 +1,4 @@
-﻿using Guna.UI2.WinForms;
-
-namespace MKManager.View
+﻿namespace MKManager.View
 {
     public partial class TelaMae : Form
     {
