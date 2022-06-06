@@ -16,11 +16,14 @@
             if (controle is TextBox || controle is ComboBox)
                 controle.Text = string.Empty;
 
-            if (controle is RadioButton radioButton)
+            else if (controle is RadioButton radioButton)
                 radioButton.Checked = false;
 
-            if(controle is CheckBox checkBox)
+            else if(controle is CheckBox checkBox)
                 checkBox.Checked = false;
+
+            else if(controle is Panel panel)
+                TodosOsCampos(panel);
         }
     }
 }
