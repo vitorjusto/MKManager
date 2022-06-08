@@ -32,11 +32,13 @@ namespace MKManager.View
         {
             LimparBotoesAtivos();
             btnExibirClientes.Checked = true;
+            AdicionarFormAoPanel(Instancias.exibirClientes);
         }
         private void btnExibirProdutos_Click(object sender, EventArgs e)
         {
             LimparBotoesAtivos();
             btnExibirProdutos.Checked = true;
+            AdicionarFormAoPanel(Instancias.exibirProdutos);
         }
         private void btnRelatorioClientes_Click(object sender, EventArgs e)
         {

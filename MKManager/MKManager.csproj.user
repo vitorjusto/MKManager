@@ -7,6 +7,12 @@
     <Compile Update="View\Cadastrar\CadastrarProdutos.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="View\Exibir\ExibirClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="View\Exibir\ExibirProdutos.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="View\TelaMae.cs">
       <SubType>Form</SubType>
     </Compile>
