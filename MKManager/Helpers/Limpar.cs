@@ -12,7 +12,6 @@
 
         public static void CampoEspecifico(Control controle)
         {
-
             if (controle is TextBox || controle is ComboBox)
                 controle.Text = string.Empty;
 
@@ -25,5 +24,7 @@
             else if(controle is Panel panel)
                 TodosOsCampos(panel);
         }
+
+        public static void Imagem(PictureBox img) => img.Image = null;
     }
 }
