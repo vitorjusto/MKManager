@@ -1,4 +1,5 @@
 ﻿using MKManager.View.Cadastrar;
+using MKManager.Helpers;
 
 namespace MKManager.View
 {
@@ -6,25 +7,26 @@ namespace MKManager.View
     {
         public TelaMae() => InitializeComponent();
 
-        private void TelaMae_Load(object sender, EventArgs e) => AdicionarFormAoPanel(new TelaPrincipal());
+        private void TelaMae_Load(object sender, EventArgs e) => AdicionarFormAoPanel(Instancias.telaPrincipal);
 
         private void btnCadastrarClientes_Click(object sender, EventArgs e)
         {
             LimparBotoesAtivos();
             btnCadastrarClientes.Checked = true;
-            AdicionarFormAoPanel(new CadastrarClientes());
+            AdicionarFormAoPanel(Instancias.cadastrarClientes);
         }
         private void btnCadastrarProdutos_Click(object sender, EventArgs e)
         {
             LimparBotoesAtivos();
             btnCadastrarProdutos.Checked = true;
+            AdicionarFormAoPanel(Instancias.cadastrarProdutos);
         }
 
         private void btnPaginaInicial_Click(object sender, EventArgs e)
         {
             LimparBotoesAtivos();
             btnPaginaInicial.Checked = true;
-            AdicionarFormAoPanel(new TelaPrincipal());
+            AdicionarFormAoPanel(Instancias.telaPrincipal);
         }
         private void btnExibirClientes_Click(object sender, EventArgs e)
         {

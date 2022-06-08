@@ -1,6 +1,6 @@
 ﻿namespace MKManager.View.Cadastrar
 {
-    partial class CadastrarClientes
+    partial class CadastrarProdutos
     {
         /// <summary>
         /// Required designer variable.
@@ -34,21 +34,21 @@
             // guna2HtmlLabel1
             // 
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(237, 228);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(208, 218);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(122, 17);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(132, 17);
             this.guna2HtmlLabel1.TabIndex = 0;
-            this.guna2HtmlLabel1.Text = "CADASTRAR CLIENTES";
+            this.guna2HtmlLabel1.Text = "CADASTRAR PRODUTOS";
             // 
-            // CadastrarClientes
+            // CadastrarProdutos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(608, 522);
+            this.ClientSize = new System.Drawing.Size(592, 483);
             this.Controls.Add(this.guna2HtmlLabel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "CadastrarClientes";
-            this.Text = "CadastrarClientes";
+            this.Name = "CadastrarProdutos";
+            this.Text = "CadastrarProdutos";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
             this.PerformLayout();
