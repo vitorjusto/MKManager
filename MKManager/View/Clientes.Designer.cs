@@ -1,6 +1,6 @@
-﻿namespace MKManager.View.Exibir
+﻿namespace MKManager.View
 {
-    partial class ExibirProdutos
+    partial class Clientes
     {
         /// <summary>
         /// Required designer variable.
@@ -34,21 +34,21 @@
             // guna2HtmlLabel1
             // 
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(223, 178);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(199, 200);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(99, 17);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(53, 17);
             this.guna2HtmlLabel1.TabIndex = 0;
-            this.guna2HtmlLabel1.Text = "EXIBIR PRODUTOS";
+            this.guna2HtmlLabel1.Text = "CLIENTES";
             // 
-            // ExibirProdutos
+            // Clientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(592, 483);
+            this.ClientSize = new System.Drawing.Size(584, 561);
             this.Controls.Add(this.guna2HtmlLabel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "ExibirProdutos";
-            this.Text = "ExibirProdutos";
+            this.Name = "Clientes";
+            this.Text = "Clientes";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
             this.PerformLayout();

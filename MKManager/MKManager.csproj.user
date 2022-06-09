@@ -1,16 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Compile Update="View\Cadastrar\CadastrarClientes.cs">
+    <Compile Update="View\Clientes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="View\Cadastrar\CadastrarProdutos.cs">
+    <Compile Update="View\Produtos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="View\Exibir\ExibirClientes.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="View\Exibir\ExibirProdutos.cs">
+    <Compile Update="View\Relatorios.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="View\TelaMae.cs">

@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace MKManager.View.Cadastrar
+namespace MKManager.View
 {
-    public partial class CadastrarClientes : Form
+    public partial class Clientes : Form
     {
-        public CadastrarClientes()
+        public Clientes()
         {
             InitializeComponent();
         }

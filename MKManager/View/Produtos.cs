@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace MKManager.View.Exibir
+namespace MKManager.View
 {
-    public partial class ExibirClientes : Form
+    public partial class Produtos : Form
     {
-        public ExibirClientes()
+        public Produtos()
         {
             InitializeComponent();
         }
