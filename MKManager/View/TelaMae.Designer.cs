@@ -63,6 +63,7 @@
             // btnAjuda
             // 
             this.btnAjuda.BorderRadius = 10;
+            this.btnAjuda.CheckedState.FillColor = System.Drawing.Color.Plum;
             this.btnAjuda.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnAjuda.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnAjuda.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
