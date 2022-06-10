@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panelSidebar = new Guna.UI2.WinForms.Guna2Panel();
             this.btnAjuda = new Guna.UI2.WinForms.Guna2Button();
             this.btnRelatorios = new Guna.UI2.WinForms.Guna2Button();
@@ -38,6 +39,7 @@
             this.lblMKManager = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.pbLogo = new Guna.UI2.WinForms.Guna2PictureBox();
             this.panelFormAtual = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
             this.panelSidebar.SuspendLayout();
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
@@ -79,10 +81,12 @@
             this.btnAjuda.TabIndex = 5;
             this.btnAjuda.Text = "Ajuda";
             this.btnAjuda.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnAjuda.Click += new System.EventHandler(this.btnAjuda_Click);
             // 
             // btnRelatorios
             // 
             this.btnRelatorios.BorderRadius = 10;
+            this.btnRelatorios.CheckedState.FillColor = System.Drawing.Color.Plum;
             this.btnRelatorios.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnRelatorios.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnRelatorios.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -104,6 +108,7 @@
             // btnProdutos
             // 
             this.btnProdutos.BorderRadius = 10;
+            this.btnProdutos.CheckedState.FillColor = System.Drawing.Color.Plum;
             this.btnProdutos.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnProdutos.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnProdutos.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -125,6 +130,7 @@
             // btnClientes
             // 
             this.btnClientes.BorderRadius = 10;
+            this.btnClientes.CheckedState.FillColor = System.Drawing.Color.Plum;
             this.btnClientes.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnClientes.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnClientes.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -147,6 +153,7 @@
             // 
             this.btnPaginaInicial.BorderRadius = 10;
             this.btnPaginaInicial.Checked = true;
+            this.btnPaginaInicial.CheckedState.FillColor = System.Drawing.Color.Plum;
             this.btnPaginaInicial.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnPaginaInicial.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnPaginaInicial.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -239,5 +246,6 @@
         private Guna.UI2.WinForms.Guna2Button btnPaginaInicial;
         private Guna.UI2.WinForms.Guna2Panel panelFormAtual;
         private Guna.UI2.WinForms.Guna2Button btnAjuda;
+        private Guna.UI2.WinForms.Guna2AnimateWindow guna2AnimateWindow1;
     }
 }
