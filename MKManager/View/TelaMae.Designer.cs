@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.panelSidebar = new Guna.UI2.WinForms.Guna2Panel();
             this.btnAjuda = new Guna.UI2.WinForms.Guna2Button();
             this.btnRelatorios = new Guna.UI2.WinForms.Guna2Button();
@@ -39,7 +38,6 @@
             this.lblMKManager = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.pbLogo = new Guna.UI2.WinForms.Guna2PictureBox();
             this.panelFormAtual = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
             this.panelSidebar.SuspendLayout();
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
@@ -246,6 +244,5 @@
         private Guna.UI2.WinForms.Guna2Button btnPaginaInicial;
         private Guna.UI2.WinForms.Guna2Panel panelFormAtual;
         private Guna.UI2.WinForms.Guna2Button btnAjuda;
-        private Guna.UI2.WinForms.Guna2AnimateWindow guna2AnimateWindow1;
     }
 }
