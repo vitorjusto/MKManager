@@ -8,5 +8,6 @@ namespace MKManager.Helpers
         public static Clientes telaCliente = new();
         public static Produtos telaProduto = new();
         public static Relatorios telaRelatorio = new();
+        public static Ajuda telaAjuda = new();
     }
 }

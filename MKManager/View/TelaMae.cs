@@ -52,5 +52,12 @@ namespace MKManager.View
             btnRelatorios.Checked = true;
             AdicionarFormAoPanel(Instancias.telaRelatorio);
         }
+
+        private void btnAjuda_Click(object sender, EventArgs e)
+        {
+            LimparBotoesAtivos();
+            btnAjuda.Checked = true;
+            AdicionarFormAoPanel(Instancias.telaAjuda);
+        }
     }
 }
