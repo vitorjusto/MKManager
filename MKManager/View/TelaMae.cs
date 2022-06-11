@@ -1,4 +1,4 @@
-﻿using MKManager.View.Cadastrar;
+﻿using MKManager.Helpers;
 
 namespace MKManager.View
 {
@@ -6,66 +6,58 @@ namespace MKManager.View
     {
         public TelaMae() => InitializeComponent();
 
-        private void TelaMae_Load(object sender, EventArgs e) => AdicionarFormAoPanel(new TelaPrincipal());
+        private void TelaMae_Load(object sender, EventArgs e) => AdicionarFormAoPanel(Instancias.telaPrincipal);
 
-        private void btnCadastrarClientes_Click(object sender, EventArgs e)
+        private void LimparBotoesAtivos()
         {
-            LimparBotoesAtivos();
-            btnCadastrarClientes.Checked = true;
-            AdicionarFormAoPanel(new CadastrarClientes());
+            btnPaginaInicial.Checked = false;
+            btnClientes.Checked = false;
+            btnProdutos.Checked = false;
+            btnRelatorios.Checked = false;
+            btnAjuda.Checked = false;
         }
-        private void btnCadastrarProdutos_Click(object sender, EventArgs e)
+
+        private void AdicionarFormAoPanel(Form formAtual) 
         {
-            LimparBotoesAtivos();
-            btnCadastrarProdutos.Checked = true;
+            formAtual.TopLevel = false;
+            panelFormAtual.Controls.Add(formAtual);
+            formAtual.BringToFront();
+            formAtual.Show();
         }
 
         private void btnPaginaInicial_Click(object sender, EventArgs e)
         {
             LimparBotoesAtivos();
             btnPaginaInicial.Checked = true;
-            AdicionarFormAoPanel(new TelaPrincipal());
-        }
-        private void btnExibirClientes_Click(object sender, EventArgs e)
-        {
-            LimparBotoesAtivos();
-            btnExibirClientes.Checked = true;
-        }
-        private void btnExibirProdutos_Click(object sender, EventArgs e)
-        {
-            LimparBotoesAtivos();
-            btnExibirProdutos.Checked = true;
-        }
-        private void btnRelatorioClientes_Click(object sender, EventArgs e)
-        {
-            LimparBotoesAtivos();
-            btnRelatorioClientes.Checked = true;
+            AdicionarFormAoPanel(Instancias.telaPrincipal);
         }
 
-        private void btnRelatorioProdutos_Click(object sender, EventArgs e)
+        private void btnClientes_Click(object sender, EventArgs e)
         {
             LimparBotoesAtivos();
-            btnRelatorioProdutos.Checked = true;
+            btnClientes.Checked = true;
+            AdicionarFormAoPanel(Instancias.telaCliente);
         }
 
-        private void LimparBotoesAtivos()
+        private void btnProdutos_Click(object sender, EventArgs e)
         {
-            btnPaginaInicial.Checked = false;
-            btnCadastrarClientes.Checked = false;
-            btnCadastrarProdutos.Checked = false;
-            btnExibirClientes.Checked = false;
-            btnExibirProdutos.Checked = false;
-            btnRelatorioClientes.Checked = false;
-            btnRelatorioProdutos.Checked = false;
+            LimparBotoesAtivos();
+            btnProdutos.Checked = true;
+            AdicionarFormAoPanel(Instancias.telaProduto);
         }
 
-        private void AdicionarFormAoPanel(Form formAtual) 
+        private void btnRelatorios_Click(object sender, EventArgs e)
         {
-            formAtual.TopLevel = false;
-            panelForms.Controls.Add(formAtual);
-            formAtual.BringToFront();
-            formAtual.Show();
+            LimparBotoesAtivos();
+            btnRelatorios.Checked = true;
+            AdicionarFormAoPanel(Instancias.telaRelatorio);
         }
 
+        private void btnAjuda_Click(object sender, EventArgs e)
+        {
+            LimparBotoesAtivos();
+            btnAjuda.Checked = true;
+            AdicionarFormAoPanel(Instancias.telaAjuda);
+        }
     }
 }
