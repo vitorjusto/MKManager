@@ -20,6 +20,7 @@ namespace MKManager.View
         private void AdicionarFormAoPanel(Form formAtual) 
         {
             formAtual.TopLevel = false;
+            panelFormAtual.Controls.Clear();
             panelFormAtual.Controls.Add(formAtual);
             formAtual.BringToFront();
             formAtual.Show();
