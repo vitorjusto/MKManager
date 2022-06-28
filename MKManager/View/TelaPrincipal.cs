@@ -7,7 +7,7 @@ namespace MKManager.View
         public TelaPrincipal()
         {
             InitializeComponent();
-            Datas.VerificarHoraDoDia(lblBomDiaBoaTardeBoaNoite);
+            Datas.VerificarHoraDoDia(lblSaudacao);
         }
     }
 }

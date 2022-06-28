@@ -70,7 +70,7 @@
             this.btnAjuda.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnAjuda.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(94)))), ((int)(((byte)(166)))));
             this.btnAjuda.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnAjuda.ForeColor = System.Drawing.Color.Black;
+            this.btnAjuda.ForeColor = System.Drawing.Color.White;
             this.btnAjuda.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(115)))), ((int)(((byte)(187)))));
             this.btnAjuda.Image = global::MKManager.Properties.Resources.help;
             this.btnAjuda.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -92,7 +92,7 @@
             this.btnRelatorios.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnRelatorios.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(94)))), ((int)(((byte)(166)))));
             this.btnRelatorios.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnRelatorios.ForeColor = System.Drawing.Color.Black;
+            this.btnRelatorios.ForeColor = System.Drawing.Color.White;
             this.btnRelatorios.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(115)))), ((int)(((byte)(187)))));
             this.btnRelatorios.Image = global::MKManager.Properties.Resources.chart;
             this.btnRelatorios.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -114,7 +114,7 @@
             this.btnProdutos.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnProdutos.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(94)))), ((int)(((byte)(166)))));
             this.btnProdutos.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnProdutos.ForeColor = System.Drawing.Color.Black;
+            this.btnProdutos.ForeColor = System.Drawing.Color.White;
             this.btnProdutos.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(115)))), ((int)(((byte)(187)))));
             this.btnProdutos.Image = global::MKManager.Properties.Resources.product;
             this.btnProdutos.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -136,7 +136,7 @@
             this.btnClientes.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnClientes.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(94)))), ((int)(((byte)(166)))));
             this.btnClientes.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnClientes.ForeColor = System.Drawing.Color.Black;
+            this.btnClientes.ForeColor = System.Drawing.Color.White;
             this.btnClientes.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(115)))), ((int)(((byte)(187)))));
             this.btnClientes.Image = global::MKManager.Properties.Resources.customer;
             this.btnClientes.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -159,7 +159,7 @@
             this.btnPaginaInicial.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnPaginaInicial.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(94)))), ((int)(((byte)(166)))));
             this.btnPaginaInicial.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnPaginaInicial.ForeColor = System.Drawing.Color.Black;
+            this.btnPaginaInicial.ForeColor = System.Drawing.Color.White;
             this.btnPaginaInicial.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(115)))), ((int)(((byte)(187)))));
             this.btnPaginaInicial.Image = global::MKManager.Properties.Resources.home1;
             this.btnPaginaInicial.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;

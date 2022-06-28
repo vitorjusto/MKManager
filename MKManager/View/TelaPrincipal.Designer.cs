@@ -31,7 +31,7 @@
             this.barraDeProgressoVendas = new Guna.UI2.WinForms.Guna2CircleProgressBar();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblBomDiaBoaTardeBoaNoite = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblSaudacao = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -75,15 +75,16 @@
             this.guna2HtmlLabel1.TabIndex = 2;
             this.guna2HtmlLabel1.Text = "Meta de Vendas no mês";
             // 
-            // lblBomDiaBoaTardeBoaNoite
+            // lblSaudacao
             // 
-            this.lblBomDiaBoaTardeBoaNoite.BackColor = System.Drawing.Color.Transparent;
-            this.lblBomDiaBoaTardeBoaNoite.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblBomDiaBoaTardeBoaNoite.Location = new System.Drawing.Point(15, 45);
-            this.lblBomDiaBoaTardeBoaNoite.Name = "lblBomDiaBoaTardeBoaNoite";
-            this.lblBomDiaBoaTardeBoaNoite.Size = new System.Drawing.Size(21, 39);
-            this.lblBomDiaBoaTardeBoaNoite.TabIndex = 3;
-            this.lblBomDiaBoaTardeBoaNoite.Text = "...";
+            this.lblSaudacao.BackColor = System.Drawing.Color.Transparent;
+            this.lblSaudacao.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblSaudacao.IsSelectionEnabled = false;
+            this.lblSaudacao.Location = new System.Drawing.Point(15, 45);
+            this.lblSaudacao.Name = "lblSaudacao";
+            this.lblSaudacao.Size = new System.Drawing.Size(21, 39);
+            this.lblSaudacao.TabIndex = 3;
+            this.lblSaudacao.Text = "...";
             // 
             // TelaPrincipal
             // 
@@ -92,7 +93,7 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(584, 561);
-            this.Controls.Add(this.lblBomDiaBoaTardeBoaNoite);
+            this.Controls.Add(this.lblSaudacao);
             this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "TelaPrincipal";
@@ -110,6 +111,6 @@
         private Guna.UI2.WinForms.Guna2CircleProgressBar barraDeProgressoVendas;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lblBomDiaBoaTardeBoaNoite;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblSaudacao;
     }
 }

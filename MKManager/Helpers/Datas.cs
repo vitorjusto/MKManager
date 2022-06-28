@@ -9,10 +9,10 @@ namespace MKManager.Helpers
             if (DateTime.Now.Hour >= 6 && DateTime.Now.Hour < 12)
                 label.Text = "Bom dia, Marina Silva!";
 
-            if (DateTime.Now.Hour >= 12 && DateTime.Now.Hour < 18)
+            else if (DateTime.Now.Hour < 18)
                 label.Text = "Boa tarde, Marina Silva!";
 
-            if (DateTime.Now.Hour >= 18 && DateTime.Now.Hour < 6)
+            else
                 label.Text = "Boa noite, Marina Silva!";
         }
     }
