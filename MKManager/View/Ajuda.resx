@@ -57,4 +57,14 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="guna2HtmlLabel3.Text" xml:space="preserve">
+    <value>&lt;h3&gt;&lt;b&gt;Como visualizar um cliente?&lt;/b&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;No menu lateral, acesse a página "Clientes".&lt;/li&gt;
+&lt;li&gt;Clique no botão "Visualizar"&lt;/li&gt;
+&lt;li&gt;Pronto! A tela tem uma tabela com informações dos clientes!&lt;/li&gt;
+&lt;/ul&gt;
+</value>
+  </data>
 </root>
