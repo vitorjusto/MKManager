@@ -17,11 +17,11 @@
         {
             var verificarSeContemDDI = _numero.Contains("+55");
 
-            if (verificarSeContemDDI) return _numero.Substring(+3);
+            if (verificarSeContemDDI) return _numero.Trim().Substring(3);
 
             return _numero;
         }
 
-        public static implicit operator Celular(string numero) => new Celular(numero);
+        public static implicit operator Celular(string numero) => new(numero);
     }
 }
