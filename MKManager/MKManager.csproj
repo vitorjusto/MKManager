@@ -9,12 +9,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Controller\**" />
+    <EmbeddedResource Remove="Controller\**" />
+    <None Remove="Controller\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Guna.Charts.WinForms" Version="1.0.4" />
     <PackageReference Include="Guna.UI2.WinForms" Version="2.0.3.2" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controller\" />
     <Folder Include="Resources\" />
   </ItemGroup>
 
