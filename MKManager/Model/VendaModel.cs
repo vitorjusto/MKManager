@@ -2,19 +2,15 @@
 {
     public class VendaModel
     {
-        public List<ProdutoVendaModel> Produtos { get; set; }
+        private List<ProdutoModel> Produtos { get; set; }
+        public VendaModel() => Produtos = new List<ProdutoModel>();
 
-        public void AdicionarProduto(ProdutoVendaModel produto) => Produtos.Add(produto);
-
-        public VendaModel()
-        {
-            Produtos = new List<ProdutoVendaModel>();
-        }
-
-        public int Id { get; set; }
+        public int IdVenda { get; set; }
         public int IdCliente { get; set; }
-        public DateTime Data { get; set; }
+        public DateTime DataVenda { get; set; }
         public string FormaDePagamento { get; set; }
-        public int QuantidadeDeProdutos { get => Produtos.Sum(x => x.Quantidade); }
+        public int QuantidadeTotalDeProdutosNaVenda { get => Produtos.Sum(x => x.QuantidadeDeProdutosNaVenda); }
+
+        public void AdicionarProduto(ProdutoModel produto) => Produtos.Add(produto);
     }
 }
