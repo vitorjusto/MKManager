@@ -1,9 +1,9 @@
 ﻿using MKManager.Model;
 using MKManager.Repository;
 
-namespace MKManager.Controller
+namespace MKManager.AppService
 {
-    public class ClienteController
+    public class ClienteAppService
     {
         public void CadastrarCliente(ClienteModel cliente) => ClienteRepository.CadastrarCliente(cliente);
     }

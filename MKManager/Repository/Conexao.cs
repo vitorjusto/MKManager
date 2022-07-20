@@ -7,8 +7,8 @@ namespace MKManager.Repository
     {
         const string connectionString = @"";
 
-        public static SqlConnection? conexao = null;
+        //public static SqlConnection conexao;
 
-        public IDbConnection Conectar() => new SqlConnection(connectionString);
+        public static IDbConnection Conectar() => new SqlConnection(connectionString);
     }
 }

@@ -1,4 +1,5 @@
 ﻿using Dapper;
+using MKManager.Helpers;
 using MKManager.Model;
 
 namespace MKManager.Repository
@@ -11,7 +12,7 @@ namespace MKManager.Repository
 
             try
             {
-                using var conexao = new Conexao().Conectar();
+                using var conexao = Conexao.Conectar();
                 conexao.Open();
 
                 using var transacao = conexao.BeginTransaction();
@@ -20,6 +21,16 @@ namespace MKManager.Repository
                 transacao.Commit();
             }
             catch (Exception ex) { Console.WriteLine($"Erro: {ex}" ); }
+        }
+
+        public static void BuscarCliente() 
+        {
+            var query = new Sql();
+
+            query.Select("Id, Nome, Celular, Email from Cliente");
+            query.OrderBy("Nome asc");
+
+            query.ObterQuery();
         }
     }
 }

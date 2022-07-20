@@ -9,14 +9,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Controller\**" />
-    <EmbeddedResource Remove="Controller\**" />
-    <None Remove="Controller\**" />
-  </ItemGroup>
-
-  <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.0.123" />
     <PackageReference Include="Guna.Charts.WinForms" Version="1.0.4" />
     <PackageReference Include="Guna.UI2.WinForms" Version="2.0.3.2" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.3" />
   </ItemGroup>
 
   <ItemGroup>
