@@ -4,7 +4,7 @@ This project were created by Pedro Masson and Gabriela Dani.
 - C#
   - Guna UI Framework
   - Dapper
-  - Fluent Validation 
+  - Ninject
   - Unit Tests 
 - PostgreSQL 
 - Git
