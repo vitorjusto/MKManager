@@ -17,6 +17,8 @@
 
   <ItemGroup>
     <Folder Include="Resources\" />
+    <Folder Include="View\Cadastrar\" />
+    <Folder Include="View\Exibir\" />
   </ItemGroup>
 
   <ItemGroup>
