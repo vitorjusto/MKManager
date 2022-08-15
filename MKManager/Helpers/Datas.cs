@@ -7,13 +7,13 @@ namespace MKManager.Helpers
         public static void VerificarHoraDoDia(Guna2HtmlLabel label) 
         {
             if (DateTime.Now.Hour >= 6 && DateTime.Now.Hour < 12)
-                label.Text = "Bom dia, Marina Silva!";
+                label.Text = "Bom dia, Silvia!";
 
             else if (DateTime.Now.Hour < 18)
-                label.Text = "Boa tarde, Marina Silva!";
+                label.Text = "Boa tarde, Silvia!";
 
             else
-                label.Text = "Boa noite, Marina Silva!";
+                label.Text = "Boa noite, Silvia!";
         }
     }
 }

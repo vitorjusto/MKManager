@@ -9,6 +9,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="View\Cadastrar\**" />
+    <Compile Remove="View\Exibir\**" />
+    <EmbeddedResource Remove="View\Cadastrar\**" />
+    <EmbeddedResource Remove="View\Exibir\**" />
+    <None Remove="View\Cadastrar\**" />
+    <None Remove="View\Exibir\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Dapper" Version="2.0.123" />
     <PackageReference Include="Guna.Charts.WinForms" Version="1.0.4" />
     <PackageReference Include="Guna.UI2.WinForms" Version="2.0.3.2" />
@@ -17,8 +26,6 @@
 
   <ItemGroup>
     <Folder Include="Resources\" />
-    <Folder Include="View\Cadastrar\" />
-    <Folder Include="View\Exibir\" />
   </ItemGroup>
 
   <ItemGroup>
