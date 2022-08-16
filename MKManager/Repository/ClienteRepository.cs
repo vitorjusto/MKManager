@@ -20,10 +20,10 @@ namespace MKManager.Repository
                 conexao.Execute(query, transacao);
                 transacao.Commit();
             }
-            catch (Exception ex) { Console.WriteLine($"Erro: {ex}" ); }
+            catch (Exception ex) { Console.WriteLine($"Erro: {ex}"); }
         }
 
-        public static void BuscarCliente() 
+        public static void ListarClientes() 
         {
             var query = new Sql();
 
@@ -31,6 +31,40 @@ namespace MKManager.Repository
             query.OrderBy("Nome asc");
 
             query.ObterQuery();
+        }
+        
+        public static void AtualizarCliente()
+        {
+            var query = @"update Cliente set Nome = @Nome, Celular = @Celular, Email = @Email where Id = @Id";
+            
+            try
+            {
+                using var conexao = Conexao.Conectar();
+                conexao.Open();
+                
+                using var transacao = conexao.BeginTransaction();
+                
+                conexao.Execute(query, transacao);
+                transacao.Commit();
+            }
+            catch(Exception ex) { Console.WriteLine($"Erro: {ex}"); }
+        }
+        
+        public static void ExcluirCliente()
+        {
+            var query = @"";
+            
+            try
+            {
+                using var conexao = Conexao.Conectar();
+                conexao.Open();
+                
+                using var transacao = conexao.BeginTransaction();
+                
+                conexao.Execute(query, transacao);
+                conexao.Commit();
+            }
+            catch(Exception ex) { Console.WriteLine($"Erro: {ex}"); }             
         }
     }
 }
