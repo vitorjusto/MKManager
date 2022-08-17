@@ -8,7 +8,7 @@ namespace MKManager.Repository
     {
         public static void CadastrarCliente(ClienteModel cliente) 
         {
-            var query = @"insert into Cliente (Id, Nome, Celular, Email) values (@Id, @Nome, @Celular, @Email)";
+            var query = @"insert into Cliente (Id, Nome, Celular, Email, Cidade, Observacoes) values (@Id, @Nome, @Celular, @Email, @Cidade, @Observacoes)";
 
             try
             {
@@ -35,7 +35,7 @@ namespace MKManager.Repository
         
         public static void AtualizarCliente()
         {
-            var query = @"update Cliente set Nome = @Nome, Celular = @Celular, Email = @Email where Id = @Id";
+            var query = @"update Cliente set Nome = @Nome, Celular = @Celular, Email = @Email, Cidade = @Cidade, Observacoes = @Observacoes where Id = @Id";
             
             try
             {
