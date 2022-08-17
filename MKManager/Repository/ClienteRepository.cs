@@ -20,7 +20,7 @@ namespace MKManager.Repository
                 conexao.Execute(query, cliente, transacao);
                 transacao.Commit();
             }
-            catch (Exception ex) { Console.WriteLine($"Erro: {ex}"); }
+            catch (Exception ex) { Console.WriteLine($"Erro: {ex.Message}"); }
         }
 
         public static void ListarClientes() 
@@ -47,7 +47,7 @@ namespace MKManager.Repository
                 conexao.Execute(query, cliente, transacao);
                 transacao.Commit();
             }
-            catch(Exception ex) { Console.WriteLine($"Erro: {ex}"); }
+            catch(Exception ex) { Console.WriteLine($"Erro: {ex.Message}"); }
         }
         
         public static void ExcluirCliente(ClienteModel cliente)
@@ -64,7 +64,7 @@ namespace MKManager.Repository
                 conexao.Execute(query, cliente, transacao);
                 transacao.Commit();
             }
-            catch(Exception ex) { Console.WriteLine($"Erro: {ex}"); }             
+            catch(Exception ex) { Console.WriteLine($"Erro: {ex.Message}"); }             
         }
     }
 }
