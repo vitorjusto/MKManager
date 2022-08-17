@@ -9,7 +9,8 @@
         public int IdCliente { get; set; }
         public DateTime DataVenda { get; set; }
         public string FormaDePagamento { get; set; }
-        public int QuantidadeTotalDeProdutosNaVenda { get => Produtos.Sum(x => x.QuantidadeDeProdutosNaVenda); }
+        public Dinheiro TotalBruto { get; set; }
+        public dinheiro TotalLiquido { get; set; }
 
         public void AdicionarProduto(ProdutoModel produto) => Produtos.Add(produto);
     }
