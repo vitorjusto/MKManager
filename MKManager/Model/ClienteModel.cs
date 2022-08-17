@@ -7,6 +7,7 @@
         public string? Celular { get; set; }
         public string? Email { get; set; }
         public string? Cidade { get; set; }
+        public char Sexo { get; set; }
         public string? Observacoes { get; set; }
     }
 }
