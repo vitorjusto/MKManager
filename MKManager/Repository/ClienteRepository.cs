@@ -8,7 +8,7 @@ namespace MKManager.Repository
     {
         public static void CadastrarCliente(ClienteModel cliente) 
         {
-            var query = @"insert into Cliente (Id, Nome, Celular, Email, Cidade, Observacoes) values (@Id, @Nome, @Celular, @Email, @Cidade, @Observacoes)";
+            var query = @"insert into Cliente (IdCliente, Nome, Celular, Email, Cidade, Observacoes) values (@IdCliente, @Nome, @Celular, @Email, @Cidade, @Observacoes)";
 
             try
             {
@@ -27,7 +27,7 @@ namespace MKManager.Repository
         {
             var query = new Sql();
 
-            query.Select("Id, Nome, Celular, Email from Cliente");
+            query.Select("IdCliente, Nome, Celular, Email from Cliente");
             query.OrderBy("Nome asc");
 
             query.ObterQuery();
@@ -35,7 +35,7 @@ namespace MKManager.Repository
         
         public static void AtualizarCliente()
         {
-            var query = @"update Cliente set Nome = @Nome, Celular = @Celular, Email = @Email, Cidade = @Cidade, Observacoes = @Observacoes where Id = @Id";
+            var query = @"update Cliente set Nome = @Nome, Celular = @Celular, Email = @Email, Cidade = @Cidade, Observacoes = @Observacoes where IdCliente = @IdCliente";
             
             try
             {
@@ -52,7 +52,7 @@ namespace MKManager.Repository
         
         public static void ExcluirCliente()
         {
-            var query = @"";
+            var query = @"delete from Cliente where IdCliente = @IdCliente";
             
             try
             {
