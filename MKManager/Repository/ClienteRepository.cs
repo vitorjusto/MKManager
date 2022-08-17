@@ -17,7 +17,7 @@ namespace MKManager.Repository
 
                 using var transacao = conexao.BeginTransaction();
 
-                conexao.Execute(query, transacao);
+                conexao.Execute(query, cliente, transacao);
                 transacao.Commit();
             }
             catch (Exception ex) { Console.WriteLine($"Erro: {ex}"); }
@@ -33,7 +33,7 @@ namespace MKManager.Repository
             query.ObterQuery();
         }
         
-        public static void AtualizarCliente()
+        public static void AtualizarCliente(ClienteModel cliente)
         {
             var query = @"update Cliente set Nome = @Nome, Celular = @Celular, Email = @Email, Cidade = @Cidade, Observacoes = @Observacoes where IdCliente = @IdCliente";
             
@@ -44,13 +44,13 @@ namespace MKManager.Repository
                 
                 using var transacao = conexao.BeginTransaction();
                 
-                conexao.Execute(query, transacao);
+                conexao.Execute(query, cliente, transacao);
                 transacao.Commit();
             }
             catch(Exception ex) { Console.WriteLine($"Erro: {ex}"); }
         }
         
-        public static void ExcluirCliente()
+        public static void ExcluirCliente(ClienteModel cliente)
         {
             var query = @"delete from Cliente where IdCliente = @IdCliente";
             
@@ -61,8 +61,8 @@ namespace MKManager.Repository
                 
                 using var transacao = conexao.BeginTransaction();
                 
-                conexao.Execute(query, transacao);
-                conexao.Commit();
+                conexao.Execute(query, cliente, transacao);
+                transacao.Commit();
             }
             catch(Exception ex) { Console.WriteLine($"Erro: {ex}"); }             
         }
