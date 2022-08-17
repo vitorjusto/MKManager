@@ -15,9 +15,7 @@
 
         public string SemDDI()
         {
-            var verificarSeContemDDI = _numero.Contains("+55");
-
-            if (verificarSeContemDDI) return _numero.Trim().Substring(3);
+            if(_numero.Contains("+55")) return _numero.Trim().Substring(3); 
 
             return _numero;
         }
