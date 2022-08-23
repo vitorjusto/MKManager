@@ -9,11 +9,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="View\Cadastrar\**" />
     <Compile Remove="View\Exibir\**" />
-    <EmbeddedResource Remove="View\Cadastrar\**" />
     <EmbeddedResource Remove="View\Exibir\**" />
-    <None Remove="View\Cadastrar\**" />
     <None Remove="View\Exibir\**" />
   </ItemGroup>
 

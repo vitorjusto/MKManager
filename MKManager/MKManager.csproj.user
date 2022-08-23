@@ -4,6 +4,9 @@
     <Compile Update="View\Ajuda.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="View\Cadastrar\Clientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="View\Clientes.cs">
       <SubType>Form</SubType>
     </Compile>
