@@ -4,16 +4,16 @@ namespace MKManager.Helpers
 {
     public class Datas
     {
-        public static void VerificarHoraDoDia(Guna2HtmlLabel label) 
+        public static string VerificarHoraDoDia() 
         {
             if (DateTime.Now.Hour >= 6 && DateTime.Now.Hour < 12)
-                label.Text = "Bom dia, Silvia!";
+                return "Bom dia, Silvia!";
 
             else if (DateTime.Now.Hour < 18)
-                label.Text = "Boa tarde, Silvia!";
+                return "Boa tarde, Silvia!";
 
             else
-                label.Text = "Boa noite, Silvia!";
+                return "Boa noite, Silvia!";
         }
     }
 }
