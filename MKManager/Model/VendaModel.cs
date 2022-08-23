@@ -1,4 +1,6 @@
-﻿namespace MKManager.Model
+﻿using MKManager.ValueObjects;
+
+namespace MKManager.Model
 {
     public class VendaModel
     {
@@ -10,7 +12,7 @@
         public DateTime DataVenda { get; set; }
         public string FormaDePagamento { get; set; }
         public Dinheiro TotalBruto { get; set; }
-        public dinheiro TotalLiquido { get; set; }
+        public Dinheiro TotalLiquido { get; set; }
 
         public void AdicionarProduto(ProdutoModel produto) => Produtos.Add(produto);
     }

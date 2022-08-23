@@ -1,6 +1,7 @@
 ﻿using Dapper;
 using MKManager.Helpers;
 using MKManager.Model;
+using MKManager.Model.Result;
 
 namespace MKManager.Repository
 {
@@ -8,7 +9,8 @@ namespace MKManager.Repository
     {
         public static void CadastrarCliente(ClienteModel cliente) 
         {
-            var query = @"insert into Cliente (IdCliente, Nome, Celular, Email, Cidade, Observacoes) values (@IdCliente, @Nome, @Celular, @Email, @Cidade, @Observacoes)";
+            var query = @"insert into Cliente (IdCliente, Nome, Celular, Email, Cidade, Sexo, Observacoes) 
+                        values (@IdCliente, @Nome, @Celular, @Email, @Cidade, @Sexo, @Observacoes)";
 
             try
             {
@@ -20,22 +22,34 @@ namespace MKManager.Repository
                 conexao.Execute(query, cliente, transacao);
                 transacao.Commit();
             }
-            catch (Exception ex) { Console.WriteLine($"Erro: {ex.Message}"); }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
         }
 
-        public static void ListarClientes() 
+        public static IEnumerable<ListagemClienteResult> ListarClientes()
         {
             var query = new Sql();
 
-            query.Select("IdCliente, Nome, Celular, Email from Cliente");
-            query.OrderBy("Nome asc");
+            try 
+            {
+                query.Select("IdCliente, Nome, Celular, Email, Cidade, Sexo, Observacoes from Cliente");
+                query.OrderBy("Nome asc");
 
-            query.ObterQuery();
+                using var conexao = Conexao.Conectar();
+                return conexao.Query<ListagemClienteResult>(query.ObterQuery());
+            }
+            catch(Exception ex) 
+            {
+                throw new Exception(ex.Message);
+            }
         }
         
         public static void AtualizarCliente(ClienteModel cliente)
         {
-            var query = @"update Cliente set Nome = @Nome, Celular = @Celular, Email = @Email, Cidade = @Cidade, Observacoes = @Observacoes where IdCliente = @IdCliente";
+            var query = @"update Cliente set Nome = @Nome, Celular = @Celular, Email = @Email, Cidade = @Cidade, Sexo = @Sexo,
+                        Observacoes = @Observacoes where IdCliente = @IdCliente";
             
             try
             {
@@ -47,7 +61,10 @@ namespace MKManager.Repository
                 conexao.Execute(query, cliente, transacao);
                 transacao.Commit();
             }
-            catch(Exception ex) { Console.WriteLine($"Erro: {ex.Message}"); }
+            catch(Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
         }
         
         public static void ExcluirCliente(ClienteModel cliente)
@@ -64,7 +81,10 @@ namespace MKManager.Repository
                 conexao.Execute(query, cliente, transacao);
                 transacao.Commit();
             }
-            catch(Exception ex) { Console.WriteLine($"Erro: {ex.Message}"); }             
+            catch(Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
         }
     }
 }
