@@ -1,4 +1,5 @@
 ﻿using MKManager.AppService;
+using MKManager.Helpers;
 using MKManager.Model;
 
 namespace MKManager.View.Cadastrar
@@ -36,6 +37,11 @@ namespace MKManager.View.Cadastrar
             {
                 //_mensagemErro.Mensagem("Falha no Cadastro!");
             }
+        }
+
+        private void btnExcluirCliente_Click(object sender, EventArgs e)
+        {
+            Instancias.telaCliente.AbrirTelaDeListagem();
         }
     }
 }

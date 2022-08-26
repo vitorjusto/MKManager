@@ -1,6 +1,6 @@
 ﻿namespace MKManager.View
 {
-    partial class Clientes
+    partial class ClientesListagem
     {
         /// <summary>
         /// Required designer variable.

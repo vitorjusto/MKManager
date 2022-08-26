@@ -43,6 +43,7 @@
             this.txtObservacoes = new System.Windows.Forms.TextBox();
             this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btnSalvar = new Guna.UI2.WinForms.Guna2Button();
+            this.btnExcluirCliente = new Guna.UI2.WinForms.Guna2Button();
             this.gbSexo.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -217,11 +218,28 @@
             this.btnSalvar.Text = "SALVAR";
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
+            // btnExcluirCliente
+            // 
+            this.btnExcluirCliente.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnExcluirCliente.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnExcluirCliente.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnExcluirCliente.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnExcluirCliente.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
+            this.btnExcluirCliente.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnExcluirCliente.ForeColor = System.Drawing.Color.White;
+            this.btnExcluirCliente.Location = new System.Drawing.Point(27, 12);
+            this.btnExcluirCliente.Name = "btnExcluirCliente";
+            this.btnExcluirCliente.Size = new System.Drawing.Size(100, 27);
+            this.btnExcluirCliente.TabIndex = 15;
+            this.btnExcluirCliente.Text = "VOLTAR";
+            this.btnExcluirCliente.Click += new System.EventHandler(this.btnExcluirCliente_Click);
+            // 
             // Clientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(568, 522);
+            this.Controls.Add(this.btnExcluirCliente);
             this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.guna2HtmlLabel5);
             this.Controls.Add(this.txtObservacoes);
@@ -263,5 +281,6 @@
         private TextBox txtObservacoes;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
         private Guna.UI2.WinForms.Guna2Button btnSalvar;
+        private Guna.UI2.WinForms.Guna2Button btnExcluirCliente;
     }
 }

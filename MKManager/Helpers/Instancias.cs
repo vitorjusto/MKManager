@@ -1,11 +1,12 @@
 ﻿using MKManager.View;
+using MKManager.View.Cadastrar;
 
 namespace MKManager.Helpers
 {
     internal class Instancias
     {
         public static TelaPrincipal telaPrincipal;
-        public static Clientes telaCliente;
+        public static ClientesBase telaCliente;
         public static Produtos telaProduto;
         public static Relatorios telaRelatorio;
         public static Ajuda telaAjuda;
@@ -18,10 +19,10 @@ namespace MKManager.Helpers
             return telaPrincipal;
         }
 
-        public static Clientes ObterTelaCliente()
+        public static ClientesBase ObterTelaCliente()
         {
             if (telaCliente is null)
-                telaCliente = new Clientes();
+                telaCliente = new ClientesBase();
 
             return telaCliente;
         }
