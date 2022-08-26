@@ -38,10 +38,11 @@
             this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtCidade = new System.Windows.Forms.TextBox();
             this.gbSexo = new Guna.UI2.WinForms.Guna2GroupBox();
-            this.rbMasculino = new Guna.UI2.WinForms.Guna2RadioButton();
             this.rbFeminino = new Guna.UI2.WinForms.Guna2RadioButton();
+            this.rbMasculino = new Guna.UI2.WinForms.Guna2RadioButton();
             this.txtObservacoes = new System.Windows.Forms.TextBox();
             this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.btnSalvar = new Guna.UI2.WinForms.Guna2Button();
             this.gbSexo.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -139,28 +140,6 @@
             this.gbSexo.TabIndex = 11;
             this.gbSexo.Text = "Sexo:";
             // 
-            // rbMasculino
-            // 
-            this.rbMasculino.AutoSize = true;
-            this.rbMasculino.BackColor = System.Drawing.Color.White;
-            this.rbMasculino.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.rbMasculino.CheckedState.BorderThickness = 0;
-            this.rbMasculino.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.rbMasculino.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.rbMasculino.CheckedState.InnerOffset = -4;
-            this.rbMasculino.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.rbMasculino.ForeColor = System.Drawing.Color.Black;
-            this.rbMasculino.Location = new System.Drawing.Point(8, 56);
-            this.rbMasculino.Name = "rbMasculino";
-            this.rbMasculino.Size = new System.Drawing.Size(89, 23);
-            this.rbMasculino.TabIndex = 0;
-            this.rbMasculino.Text = "Masculino";
-            this.rbMasculino.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.rbMasculino.UncheckedState.BorderThickness = 2;
-            this.rbMasculino.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.rbMasculino.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            this.rbMasculino.UseVisualStyleBackColor = false;
-            // 
             // rbFeminino
             // 
             this.rbFeminino.AutoSize = true;
@@ -183,6 +162,28 @@
             this.rbFeminino.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
             this.rbFeminino.UseVisualStyleBackColor = false;
             // 
+            // rbMasculino
+            // 
+            this.rbMasculino.AutoSize = true;
+            this.rbMasculino.BackColor = System.Drawing.Color.White;
+            this.rbMasculino.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.rbMasculino.CheckedState.BorderThickness = 0;
+            this.rbMasculino.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.rbMasculino.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.rbMasculino.CheckedState.InnerOffset = -4;
+            this.rbMasculino.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.rbMasculino.ForeColor = System.Drawing.Color.Black;
+            this.rbMasculino.Location = new System.Drawing.Point(8, 56);
+            this.rbMasculino.Name = "rbMasculino";
+            this.rbMasculino.Size = new System.Drawing.Size(89, 23);
+            this.rbMasculino.TabIndex = 0;
+            this.rbMasculino.Text = "Masculino";
+            this.rbMasculino.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.rbMasculino.UncheckedState.BorderThickness = 2;
+            this.rbMasculino.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.rbMasculino.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            this.rbMasculino.UseVisualStyleBackColor = false;
+            // 
             // txtObservacoes
             // 
             this.txtObservacoes.Location = new System.Drawing.Point(297, 352);
@@ -201,11 +202,27 @@
             this.guna2HtmlLabel5.TabIndex = 13;
             this.guna2HtmlLabel5.Text = "Observações:";
             // 
+            // btnSalvar
+            // 
+            this.btnSalvar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSalvar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSalvar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSalvar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSalvar.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnSalvar.ForeColor = System.Drawing.Color.White;
+            this.btnSalvar.Location = new System.Drawing.Point(46, 447);
+            this.btnSalvar.Name = "btnSalvar";
+            this.btnSalvar.Size = new System.Drawing.Size(180, 45);
+            this.btnSalvar.TabIndex = 14;
+            this.btnSalvar.Text = "SALVAR";
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
+            // 
             // Clientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(568, 522);
+            this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.guna2HtmlLabel5);
             this.Controls.Add(this.txtObservacoes);
             this.Controls.Add(this.gbSexo);
@@ -245,5 +262,6 @@
         private Guna.UI2.WinForms.Guna2RadioButton rbMasculino;
         private TextBox txtObservacoes;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
+        private Guna.UI2.WinForms.Guna2Button btnSalvar;
     }
 }

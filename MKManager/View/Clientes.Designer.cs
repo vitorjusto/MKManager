@@ -41,6 +41,7 @@
             this.btnCadastrarCliente = new Guna.UI2.WinForms.Guna2Button();
             this.btnExibirCliente = new Guna.UI2.WinForms.Guna2Button();
             this.btnExcluirCliente = new Guna.UI2.WinForms.Guna2Button();
+            this.panelClientes = new Guna.UI2.WinForms.Guna2Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).BeginInit();
             this.SuspendLayout();
             // 
@@ -157,6 +158,7 @@
             this.btnCadastrarCliente.Size = new System.Drawing.Size(157, 55);
             this.btnCadastrarCliente.TabIndex = 2;
             this.btnCadastrarCliente.Text = "CADASTRAR CLIENTE";
+            this.btnCadastrarCliente.Click += new System.EventHandler(this.btnCadastrarCliente_Click);
             // 
             // btnExibirCliente
             // 
@@ -187,6 +189,13 @@
             this.btnExcluirCliente.TabIndex = 4;
             this.btnExcluirCliente.Text = "EXCLUIR CLIENTE";
             // 
+            // panelClientes
+            // 
+            this.panelClientes.Location = new System.Drawing.Point(0, 0);
+            this.panelClientes.Name = "panelClientes";
+            this.panelClientes.Size = new System.Drawing.Size(584, 562);
+            this.panelClientes.TabIndex = 5;
+            // 
             // Clientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -197,6 +206,7 @@
             this.Controls.Add(this.btnCadastrarCliente);
             this.Controls.Add(this.lblListagemClientes);
             this.Controls.Add(this.dgvClientes);
+            this.Controls.Add(this.panelClientes);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Clientes";
             this.Text = "Clientes";
@@ -219,5 +229,6 @@
         private Guna.UI2.WinForms.Guna2Button btnCadastrarCliente;
         private Guna.UI2.WinForms.Guna2Button btnExcluirCliente;
         private Guna.UI2.WinForms.Guna2Button btnExibirCliente;
+        private Guna.UI2.WinForms.Guna2Panel panelClientes;
     }
 }
